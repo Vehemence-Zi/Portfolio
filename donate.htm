@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Jousef Al Sadawi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.htm">JOUSEF<span>//AL SADAWI</span></a>
+        <span id="equipped-badge" class="system-call">[ EQUIPPED: THE FOOL ]</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.htm"><span class="nav-num">I</span>Home</a></li>
+          <li><a href="Resume.htm"><span class="nav-num">II</span>Resume</a></li>
+          <li><a href="Interests.htm"><span class="nav-num">III</span>Interests</a></li>
+          <li><a href="Donate.htm" class="active"><span class="nav-num">IV</span>Donate</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="sfx-toggle" class="btn-hud-sfx">SFX: ON</button>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content-col">
+        <span class="status-tag">SUPPORT TERMINAL &bull; TRANSACTION MODULE</span>
+        <h1>Community Sponsorship</h1>
+        <p class="hero-summary">
+          Support my academic journey, CompTIA Security+ certification prep, and future streaming setup.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Payment Form Section -->
+  <main class="main-container">
+    <article class="content-card tarot-card form-card">
+      <div class="tarot-header">
+        <h2 class="tarot-numeral">PAYMENT AUTHORIZATION</h2>
+        <span class="tarot-sub">ENCRYPTED CHANNEL</span>
+      </div>
+
+      <form id="donate-form" action="#" method="post" class="p3r-form">
+        
+        <fieldset class="radio-fieldset">
+          <legend>Title / Honorific</legend>
+          <div class="radio-options">
+            <div class="radio-item">
+              <input type="radio" id="title-mr" name="title" value="Mr." required>
+              <label for="title-mr">Mr.</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="title-ms" name="title" value="Ms.">
+              <label for="title-ms">Ms.</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="title-mx" name="title" value="Mx.">
+              <label for="title-mx">Mx.</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="title-other" name="title" value="Other">
+              <label for="title-other">Other</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="e.g., Makoto" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="e.g., Yuki" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="operator@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="donate-date">Date</label>
+            <input type="date" id="donate-date" name="donate_date" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone-type">Phone Type</label>
+            <select id="phone-type" name="phone_type" required>
+              <option value="">-- Select Type --</option>
+              <option value="mobile">Mobile</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+          <div class="form-group form-group-code">
+            <label for="country-code">Country Code</label>
+            <select id="country-code" name="country_code" required>
+              <option value="">-- Code --</option>
+              <option value="+1">+1 (US / CA)</option>
+              <option value="+44">+44 (UK)</option>
+              <option value="+63">+63 (PH)</option>
+              <option value="+81">+81 (JP)</option>
+              <option value="+82">+82 (KR)</option>
+              <option value="+61">+61 (AU)</option>
+              <option value="+64">+64 (NZ)</option>
+              <option value="+49">+49 (DE)</option>
+              <option value="+33">+33 (FR)</option>
+              <option value="+39">+39 (IT)</option>
+              <option value="+34">+34 (ES)</option>
+              <option value="+31">+31 (NL)</option>
+              <option value="+46">+46 (SE)</option>
+              <option value="+41">+41 (CH)</option>
+              <option value="+52">+52 (MX)</option>
+              <option value="+55">+55 (BR)</option>
+              <option value="+54">+54 (AR)</option>
+              <option value="+91">+91 (IN)</option>
+              <option value="+86">+86 (CN)</option>
+              <option value="+852">+852 (HK)</option>
+              <option value="+886">+886 (TW)</option>
+              <option value="+65">+65 (SG)</option>
+              <option value="+60">+60 (MY)</option>
+              <option value="+66">+66 (TH)</option>
+              <option value="+62">+62 (ID)</option>
+              <option value="+84">+84 (VN)</option>
+              <option value="+971">+971 (AE)</option>
+              <option value="+966">+966 (SA)</option>
+              <option value="+27">+27 (ZA)</option>
+            </select>
+          </div>
+          <div class="form-group form-group-phone">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone_number" pattern="[0-9]{2,4}[ -]?[0-9]{3,4}[ -]?[0-9]{4}" placeholder="123-456-7890" title="Enter a valid phone number (e.g., 123-456-7890)" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="street-address">Billing Street Address</label>
+          <input type="text" id="street-address" name="street_address" placeholder="100 Iwatodai Dorm Way" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Warner Robins" required>
+          </div>
+          <div class="form-group">
+            <label for="state">State / Province</label>
+            <input type="text" id="state" name="state" placeholder="GA" required>
+          </div>
+          <div class="form-group">
+            <label for="zip-code">ZIP / Postal Code</label>
+            <input type="text" id="zip-code" name="zip_code" pattern="[A-Za-z0-9\s\-]{3,10}" placeholder="31088" title="Enter a valid ZIP or postal code" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Contribution Amount ($ USD)</label>
+          <input type="number" id="price" name="price" min="1" step="0.01" placeholder="25.00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cc-num">Credit Card #</label>
+          <input type="text" id="cc-num" name="cc_num" inputmode="numeric" pattern="[0-9\s]{13,23}" maxlength="19" placeholder="0000 1111 2222 3333" title="Enter 13 to 16 digits" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exp-date">Expiration Date (MM/YY)</label>
+            <input type="text" id="exp-date" name="exp_date" inputmode="numeric" pattern="(0[1-9]|1[0-2])\/([0-9]{2})" maxlength="5" placeholder="08/29" title="Enter expiration date in MM/YY format (e.g., 08/29)" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">Security Code (CVV)</label>
+            <input type="text" id="cvv" name="cvv" inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" placeholder="123" title="3 or 4 digit security code" required>
+          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the Terms &amp; Conditions of this sponsorship.</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">AUTHORIZE &amp; SUBMIT</button>
+        </div>
+
+      </form>
+
+      <!-- Live JS Receipt Box -->
+      <div id="receipt-modal" class="receipt-box">
+        <h3>[ TRANSACTION VERIFIED ]</h3>
+        <p id="receipt-details"></p>
+        <button type="button" id="close-receipt" class="btn btn-secondary">NEW TRANSACTION</button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p><span id="live-clock">TIME STAMP: 00:00 [ STANDBY ]</span> &bull; &copy; 2026 JOUSEF AL SADAWI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

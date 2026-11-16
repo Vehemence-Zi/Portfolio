@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jousef Al Sadawi | Tactical System Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="p3r-menu-screen">
+
+  <!-- Top In-Game Date, SFX Toggle & Moon Phase HUD -->
+  <header class="game-hud-bar">
+    <div class="hud-date-cluster">
+      <span id="hud-date" class="hud-big-date">11/15</span>
+      <div class="hud-day-info">
+        <span id="hud-weekday" class="hud-day">SUN</span>
+        <span id="hud-time-period" class="hud-period">NIGHT</span>
+      </div>
+    </div>
+
+    <div class="hud-right-controls">
+      <button type="button" id="sfx-toggle" class="btn-hud-sfx">SFX: ON</button>
+      <div class="hud-moon-cluster">
+        <div class="moon-text">
+          <span class="moon-label">MOON PHASE</span>
+          <span id="moon-phase-name" class="moon-state">WAXING CRESCENT</span>
+        </div>
+        <div class="moon-orb" aria-hidden="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Split Game Menu -->
+  <main class="game-menu-stage">
+    
+    <!-- Left Column: Slanted Command Blades -->
+    <section class="command-column" aria-label="Primary Game Navigation">
+      <div class="menu-header-tag">
+        <span class="sys-prefix">TACTICAL INTERFACE // MAIN MENU</span>
+        <h1>JOUSEF AL SADAWI</h1>
+      </div>
+
+      <nav class="p3r-command-list">
+        <ul>
+          <li>
+            <a href="#persona-drawer" class="cmd-blade active-blade" data-preview="IDENTITY: Full-time IT &amp; Cyberforensics undergrad at Middle Georgia State University. Starting at LV. 04 with everything ahead to master.">
+              <span class="cmd-roman">00</span>
+              <span class="cmd-title">PERSONA</span>
+              <span class="cmd-sub">WHO AM I &amp; STATUS</span>
+            </a>
+          </li>
+          <li>
+            <a href="Resume.htm" class="cmd-blade" data-preview="EQUIPMENT: Learning HTML, CSS, Python, and studying for CompTIA Security+. View interactive skill XP bars, education, and work history.">
+              <span class="cmd-roman">01</span>
+              <span class="cmd-title">EQUIP / CV</span>
+              <span class="cmd-sub">RESUME &amp; SKILLS</span>
+            </a>
+          </li>
+          <li>
+            <a href="Interests.htm" class="cmd-blade" data-preview="SOCIAL LINKS: Discord co-op sessions (League, Monster Hunter, WoW), League esports, Asian home cooking, hiking, and streaming goals.">
+              <span class="cmd-roman">02</span>
+              <span class="cmd-title">SOCIAL</span>
+              <span class="cmd-sub">GAMING &amp; INTERESTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="Donate.htm" class="cmd-blade" data-preview="SUPPORT TERMINAL: Sponsor student lab hardware, CompTIA Security+ vouchers, and future live-stream gear.">
+              <span class="cmd-roman">03</span>
+              <span class="cmd-title">SPONSOR</span>
+              <span class="cmd-sub">DONATE GATEWAY</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Live Hover Description Ticker -->
+      <div class="cmd-help-ticker">
+        <span class="ticker-badge">INFO</span>
+        <p id="cmd-preview-text">IDENTITY: Full-time IT &amp; Cyberforensics undergrad at Middle Georgia State University. Starting at LV. 04 with everything ahead to master.</p>
+      </div>
+    </section>
+
+    <!-- Right Column: Character Portrait, Arcana Switcher & Live Stats -->
+    <section id="persona-drawer" class="character-stage" aria-label="Character Status and Persona Stats">
+      <div class="portrait-backdrop">
+        <div class="p3r-portrait-box">
+          <img src="img/profile.jpg" alt="Jousef Al Sadawi">
+        </div>
+        <div class="portrait-glass-tag">
+          <span id="hud-level" class="lvl-num">LV. 04</span>
+          <span id="hud-role" class="lvl-class">ROOKIE // OPERATOR</span>
+        </div>
+      </div>
+
+      <!-- Interactive Persona Card Deck -->
+      <div class="persona-deck-panel">
+        <div class="deck-top-bar">
+          <span id="arcana-tag" class="tarot-card-tag">ARCANA 0</span>
+          <span id="arcana-name" class="arcana-name">THE FOOL &bull; THE NOVICE</span>
+          <button type="button" id="summon-btn" class="btn-mini-summon">NEXT ARCANA &raquo;</button>
+        </div>
+
+        <!-- Low Starting HP / SP Gauges -->
+        <div class="stat-gauges">
+          <div class="gauge-row">
+            <span class="gauge-label">HP (ACADEMICS)</span>
+            <div class="gauge-bar"><div id="fill-hp" class="fill-hp initial-hp"></div></div>
+            <span id="val-hp" class="gauge-val">28/100</span>
+          </div>
+          <div class="gauge-row">
+            <span class="gauge-label">SP (SKILLS / SEC+)</span>
+            <div class="gauge-bar"><div id="fill-sp" class="fill-sp initial-sp"></div></div>
+            <span id="val-sp" class="gauge-val">22/100</span>
+          </div>
+        </div>
+
+        <!-- 3 Compact Arcana Tabs -->
+        <div class="arcana-tabs">
+          <article class="mini-tarot persona-selectable persona-equipped">
+            <h2>0 // WHO AM I</h2>
+            <p>Full-time IT student at Middle Georgia State University focusing on cyberforensics. Starting with modest stats because there is so much left to learn.</p>
+          </article>
+          <article class="mini-tarot persona-selectable">
+            <h2>VII // ASPIRATIONS</h2>
+            <p>Aspiring to become a <strong>Streamer &amp; Content Creator</strong> while building a career in <strong>Cybersecurity &amp; Forensics</strong>.</p>
+          </article>
+          <article class="mini-tarot persona-selectable">
+            <h2>I // CURRENT GRIND</h2>
+            <p>Finishing my college degree, studying for <strong>CompTIA Security+</strong>, and learning <strong>HTML, CSS, and Python</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Midnight Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p><span id="live-clock">TIME STAMP: 00:00 [ STANDBY ]</span> &bull; &copy; 2026 JOUSEF AL SADAWI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interests | Jousef Al Sadawi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="index.htm">JOUSEF<span>//AL SADAWI</span></a>
+        <span id="equipped-badge" class="system-call">[ EQUIPPED: THE FOOL ]</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.htm"><span class="nav-num">I</span>Home</a></li>
+          <li><a href="Resume.htm"><span class="nav-num">II</span>Resume</a></li>
+          <li><a href="Interests.htm" class="active"><span class="nav-num">III</span>Interests</a></li>
+          <li><a href="Donate.htm"><span class="nav-num">IV</span>Donate</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="sfx-toggle" class="btn-hud-sfx">SFX: ON</button>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content-col">
+        <span class="status-tag">SOCIAL LINKS &bull; ACTIVITIES OUTSIDE OF CLASS</span>
+        <h1>What I Do for Fun</h1>
+        <p class="hero-summary">
+          When I'm not studying or coding, I'm gaming with friends on Discord, preparing my streaming setup, watching competitive League esports, cooking homecooked Asian meals, and hiking mountain trails.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Interests Content -->
+  <main class="main-container">
+
+    <!-- Interactive 3-Slide Archive & Lightbox -->
+    <section class="content-card tarot-card slideshow-wrapper" aria-label="Interactive Hobby Gallery">
+      <div class="tarot-header">
+        <h2 class="tarot-numeral">MEMORY ARCHIVE // SLIDESHOW</h2>
+        <span class="tarot-sub">CLICK IMAGE FOR FULL VIEW</span>
+      </div>
+
+      <div class="slideshow-stage">
+        <button type="button" id="slide-prev" class="slide-nav-btn" aria-label="Previous Slide">&laquo;</button>
+        
+        <div class="slide-viewport">
+          <div class="slide-item active-slide" data-title="GAMING, DISCORD &amp; STREAMING SETUP" data-desc="Dual-monitor battle station for queueing League of Legends, Monster Hunter, and World of Warcraft on Discord, watching League esports, and building toward live streaming.">
+            <img src="img/gaming.jpg" alt="Dual-monitor gaming and streaming workstation" class="lightbox-trigger">
+            <div class="slide-caption">
+              <h3>01 // GAMING &amp; STREAMING WORKSTATION</h3>
+              <p>Click image to expand full view</p>
+            </div>
+          </div>
+
+          <div class="slide-item" data-title="FILIPINO, JAPANESE &amp; KOREAN HOME COOKING" data-desc="Wok-seared dishes and homecooked meals made from scratch—featuring Filipino favorites, Japanese classics, and rich Korean cuisine.">
+            <img src="img/cooking.jpg" alt="Homecooked stir-fry in a wok" class="lightbox-trigger">
+            <div class="slide-caption">
+              <h3>02 // HOME COOKING &amp; ASIAN CUISINE</h3>
+              <p>Click image to expand full view</p>
+            </div>
+          </div>
+
+          <div class="slide-item" data-title="OUTDOOR HIKING WITH FRIENDS" data-desc="Stepping away from screens to hike scenic mountain overlooks and recharge outdoors with friends.">
+            <img src="img/hiking.jpg" alt="Hiking on a rocky mountain overlook" class="lightbox-trigger">
+            <div class="slide-caption">
+              <h3>03 // OUTDOOR MOUNTAIN HIKING</h3>
+              <p>Click image to expand full view</p>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" id="slide-next" class="slide-nav-btn" aria-label="Next Slide">&raquo;</button>
+      </div>
+
+      <div class="slide-dots">
+        <button type="button" class="dot active-dot" data-slide="0" aria-label="Slide 1"></button>
+        <button type="button" class="dot" data-slide="1" aria-label="Slide 2"></button>
+        <button type="button" class="dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- 3 Arcana Cards -->
+    <div class="card-grid">
+      <article class="content-card tarot-card">
+        <div class="tarot-header">
+          <div class="tarot-numeral">ARCANA IV // THE EMPEROR</div>
+          <span class="tarot-sub">GAMING &amp; BROADCAST</span>
+        </div>
+        <div class="tarot-persona-title">
+          <h2>GAMING &amp; STREAMING</h2>
+          <span class="persona-type">[ CO-OP &amp; CONTENT CREATION ]</span>
+        </div>
+        <p>
+          My main hobby is playing video games and hanging out with friends on Discord—queuing into <strong>League of Legends</strong>, hunting in <strong>Monster Hunter</strong>, raiding in <strong>World of Warcraft</strong>, and watching competitive <strong>League esports</strong>.
+        </p>
+        <p>
+          I also aspire to become a <strong>streamer and content creator</strong>, fine-tuning my dual-monitor setup, mic audio, and overlays to share gameplay with a community.
+        </p>
+      </article>
+
+      <article class="content-card tarot-card">
+        <div class="tarot-header">
+          <div class="tarot-numeral">ARCANA XIV // TEMPERANCE</div>
+          <span class="tarot-sub">CULINARY CRAFT</span>
+        </div>
+        <div class="tarot-persona-title">
+          <h2>HOME COOKING</h2>
+          <span class="persona-type">[ FILIPINO &bull; JAPANESE &bull; KOREAN ]</span>
+        </div>
+        <p>
+          I love cooking homecooked meals from scratch in the kitchen. Experimenting with bold marinades, wok stir-fries, and slow-simmered broths is one of my favorite ways to relax after classes.
+        </p>
+        <p>
+          My go-to dishes span <strong>Filipino</strong> comfort classics, savory <strong>Japanese</strong> recipes, and spicy <strong>Korean</strong> stews.
+        </p>
+      </article>
+
+      <article class="content-card tarot-card">
+        <div class="tarot-header">
+          <div class="tarot-numeral">ARCANA XVII // THE STAR</div>
+          <span class="tarot-sub">OUTDOOR EXPLORATION</span>
+        </div>
+        <div class="tarot-persona-title">
+          <h2>HIKING WITH FRIENDS</h2>
+          <span class="persona-type">[ RECHARGE &amp; PERSPECTIVE ]</span>
+        </div>
+        <p>
+          Whenever I need a break from screens and studying for CompTIA Security+, I head out to hit hiking trails with friends.
+        </p>
+        <p>
+          Reaching mountain overlooks and staying active outdoors keeps me energized and balanced throughout the semester.
+        </p>
+      </article>
+    </div>
+
+  </main>
+
+  <!-- Modal Lightbox Overlay -->
+  <div id="lightbox-modal" class="lightbox-overlay" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="lightbox-content">
+      <button type="button" id="lb-close" class="lb-close-btn">CLOSE [X]</button>
+      <img id="lb-img" src="img/gaming.jpg" alt="Expanded Archive Preview">
+      <div class="lb-caption">
+        <h3 id="lb-title">Archive Title</h3>
+        <p id="lb-desc">Archive Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p><span id="live-clock">TIME STAMP: 00:00 [ STANDBY ]</span> &bull; &copy; 2026 JOUSEF AL SADAWI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
